@@ -1,0 +1,52 @@
+/* Animated background */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(-45deg, #ffd3a5, #fd6585, #f7bb97, #ffecd2);
+    background-size: 400% 400%;
+    animation: bgMove 20s ease infinite;
+    color: #2e2e2e;
+}
+
+@keyframes bgMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+h1 {
+    font-size: 2.8em;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+p {
+    font-size: 1.2em;
+    color: #444;
+    margin-bottom: 30px;
+}
+
+img, video {
+    width: 500px;
+    max-width: 90%;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+img:hover, video:hover {
+    transform: scale(1.03);
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
