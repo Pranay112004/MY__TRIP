@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manali Trip</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #2c3e50;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        .media-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        img, video {
+            width: 300px;
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+        }
+
+        video.large {
+            width: 700px;
+        }
+
+        video.medium {
+            width: 500px;
+        }
+
+        video.small {
+            width: 350px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Manali Trip</h1>
+    <p>Here are some memories</p>
+
+    <div class="media-container">
+        <!-- Images -->
+        <img src="/PHOTOS/IMG_6585.jpg" alt="Manali Image 1">
+        <img src="/PHOTOS/IMG_6603.jpg" alt="Manali Image 2">
+        <img src="/PHOTOS/IMG_6609.jpg" alt="Manali Image 3">
+        <img src="/PHOTOS/IMG_6658.jpg" alt="Manali Image 4">
+        <img src="/PHOTOS/IMG_6697.jpg" alt="Manali Image 5">
+        <img src="/PHOTOS/IMG_6857.jpg" alt="Manali Image 6">
+        <img src="/PHOTOS/IMG_6962.jpg" alt="Manali Image 7">
+        <img src="/PHOTOS/IMG_6971.jpg" alt="Manali Image 8">   
+        <img src="/PHOTOS/IMG_6985.jpg" alt="Manali Image 9">
+
+
+        <!-- Videos -->
+        <video class="medium" controls>
+            <source src="/vedios/IMG_6845.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <video class="small" controls>
+            <source src="/vedios/IMG_6846.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <video class="medium" controls>
+            <source src="/vedios/IMG_6850.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <video class="medium" controls>
+            <source src="/vedios/M1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <video class="large" controls>
+            <source src="/vedios/M2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</body>
+</html>
