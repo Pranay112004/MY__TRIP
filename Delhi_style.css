@@ -36,7 +36,19 @@ img, video {
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     transition: transform 0.3s ease;
 }
-
+.back-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background: #2c3e50;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease;
+}
 img:hover, video:hover {
     transform: scale(1.03);
 }
