@@ -1,122 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My North India Trip</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-
-        header, footer {
-            text-align: center;
-        }
-
-        footer {
-            margin-top: 40px;
-            font-size: 14px;
-            color: #555;
-        }
-
-        .trip-container {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-
-        .trip-box {
-            text-align: center;
-            max-width: 300px;
-            padding: 10px;
-            border-radius: 12px;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.2s ease;
-        }
-
-        .trip-box:hover {
-            transform: scale(1.05);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-        }
-
-        .trip-box img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-
-        .manali {
-            background-color: #e0f2ff;
-            font-style: italic;
-        }
-
-        .delhi {
-            background-color: #ffe8cc;
-            font-style: italic;
-        }
-
-        .mcleod {
-            background-color: #ffe0f0;
-            font-style: italic;
-        }
-
-        @media (max-width: 600px) {
-            .trip-container {
-                flex-direction: column;
-                align-items: center;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My North India Trip</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>My North India Trip</h1>
-        <p>Welcome to my travel blog! Here, I share my experiences and memories from my trip to North India.</p>
-        <p>Hi, I’m Pranay Sureshrao Meshram. I'm excited to share my amazing North India trip with you — click the links below to view photos from each destination!</p>
-    </header>
+  <!-- Star Sky Elements -->
+  <div class="sky"></div>
+  <div class="shooting-star"></div>
+  <div class="shooting-star"></div>
+  <div class="shooting-star"></div>
+  <div class="shooting-star"></div>
+  <div class="shooting-star"></div>
 
-    <main>
-        <h2>Explore My Trip</h2>
+  <!-- Header -->
+  <header>
+    <h1>My North India Trip</h1>
+    <p>Welcome to my travel blog! Here, I share my experiences and memories from my trip to North India.</p>
+    <p>Hi, I’m Pranay Sureshrao Meshram. I'm excited to share my amazing North India trip with you — click the links below to view photos from each destination!</p>
+  </header>
 
-        <div class="trip-container">
-            <!-- Manali -->
-            <div class="trip-box manali">
-                <h3>Manali Visit</h3>
-                <a href="MANALI.html" target="_blank">
-                    <img src="https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcS3r6_-3ZkUVmUARY-hdpWllPQWhhuir62njsj2d3KGQWmlfO8EGGVIAz_Bpwx8YXuZhgYzXXqMUU3VTDy-cTrfifC7Y7Uk3Xs1eVaj8g" alt="Manali">
-                    <br/>Go to MANALI
-                </a>
-            </div>
+  <!-- Main -->
+  <main>
+    <h2>Explore My Trip</h2>
+    <div class="trip-container">
+      <!-- Manali -->
+      <div class="trip-box manali">
+        <h3>Manali Visit</h3>
+        <a href="MANALI.html" target="_blank">
+          <img src="https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcS3r6_-3ZkUVmUARY-hdpWllPQWhhuir62njsj2d3KGQWmlfO8EGGVIAz_Bpwx8YXuZhgYzXXqMUU3VTDy-cTrfifC7Y7Uk3Xs1eVaj8g" alt="Manali" />
+          <br />Go to MANALI
+        </a>
+      </div>
 
-            <!-- Delhi -->
-            <div class="trip-box delhi">
-                <h3>Delhi Visit</h3>
-                <a href="DELHI.html" target="_blank">
-                    <img src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcTuklqN0l2JcOdkGdHeIzdVqp5RZxSEYtbSv_bwxaFl9Lq58p9Aifxh1VVDmNAPem3T_Az1IC6Rq9O1WCTwvJMWKap3eC0aD_CpJiy7LA" alt="Delhi">
-                    <br/>Go to DELHI
-                </a>
-            </div>
+      <!-- Delhi -->
+      <div class="trip-box delhi">
+        <h3>Delhi Visit</h3>
+        <a href="DELHI.html" target="_blank">
+          <img src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcTuklqN0l2JcOdkGdHeIzdVqp5RZxSEYtbSv_bwxaFl9Lq58p9Aifxh1VVDmNAPem3T_Az1IC6Rq9O1WCTwvJMWKap3eC0aD_CpJiy7LA" alt="Delhi" />
+          <br />Go to DELHI
+        </a>
+      </div>
 
-            <!-- McLeod Ganj & Dharamshala -->
-            <div class="trip-box mcleod">
-                <h3>McLeod Ganj & Dharamshala</h3>
-                <a href="Mechlodganj&Dharmashala.html" target="_blank">
-                    <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqsX2CVFSi-8gXIjJ-vWPK_h3MGaF5ljmFhzRV3DkQmOAcrwM22vF9UhqMwhdQhxHNI4JMDh-u4JBSuA3AyicSyBLwGJS3V3iDyHZ0YdtGvEgaPf4fstNx3q7zCLsxDtUY6CrRM=w1080-h624-n-k-no" alt="McLeod Ganj & Dharamshala">
-                    <br/>Go to McLeod Ganj & Dharamshala
-                </a>
-            </div>
-        </div>
-    </main>
+      <!-- McLeod Ganj & Dharamshala -->
+      <div class="trip-box mcleod">
+        <h3>McLeod Ganj & Dharamshala</h3>
+        <a href="Mechlodganj&Dharmashala.html" target="_blank">
+          <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqsX2CVFSi-8gXIjJ-vWPK_h3MGaF5ljmFhzRV3DkQmOAcrwM22vF9UhqMwhdQhxHNI4JMDh-u4JBSuA3AyicSyBLwGJS3V3iDyHZ0YdtGvEgaPf4fstNx3q7zCLsxDtUY6CrRM=w1080-h624-n-k-no" alt="McLeod Ganj & Dharamshala" />
+          <br />Go to McLeod Ganj & Dharamshala
+        </a>
+      </div>
+    </div>
+  </main>
 
-    <footer>
-        <p>Thank you for visiting my travel blog! I hope you enjoyed the journey through my North India trip.</p>
-        <p>For more updates, follow me on my social media channels.</p>
-        <p>&copy; 2025 Pranay Sureshrao Meshram</p>
-    </footer>
+  <!-- Footer -->
+  <footer>
+    <p>Thank you for visiting my travel blog! I hope you enjoyed the journey through my North India trip.</p>
+    <p>For more updates, follow me on my social media channels.</p>
+    <p>&copy; 2025 Pranay Sureshrao Meshram</p>
+  </footer>
+
+  <!-- Star Script -->
+  <script>
+    const sky = document.querySelector('.sky');
+    const numStars = 150;
+
+    for (let i = 0; i < numStars; i++) {
+      const star = document.createElement('div');
+      star.classList.add('star');
+      star.style.top = `${Math.random() * 100}vh`;
+      star.style.left = `${Math.random() * 100}vw`;
+      star.style.animationDuration = `${4 + Math.random() * 4}s`;
+      sky.appendChild(star);
+    }
+
+    const shootingStars = document.querySelectorAll('.shooting-star');
+    shootingStars.forEach((star, index) => {
+      star.style.top = `${20 + index * 15}%`;
+      star.style.left = `-${Math.random() * 100}px`;
+      star.style.animationDelay = `${index * 2}s`;
+    });
+  </script>
 </body>
 </html>
