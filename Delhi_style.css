@@ -1,55 +1,61 @@
-/* Animated background */
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
+    background-color: #fee440;
     margin: 0;
-    padding: 20px;
-    background: linear-gradient(-45deg, #ffd3a5, #fd6585, #f7bb97, #ffecd2);
-    background-size: 400% 400%;
-    animation: bgMove 20s ease infinite;
-    color: #2e2e2e;
+    font-family: 'Segoe UI', sans-serif;
+    overflow-x: hidden;
 }
 
-@keyframes bgMove {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+svg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+.links {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    margin-left: 1em;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a img.icon {
+    display: inline-block;
+    height: 1em;
+    margin-left: 0.3em;
+    vertical-align: middle;
 }
 
 h1 {
     font-size: 2.8em;
-    margin-bottom: 10px;
+    margin: 30px;
     color: #222;
+    text-align: center;
 }
 
-p {
-    font-size: 1.2em;
-    color: #444;
-    margin-bottom: 30px;
-}
-
-img, video {
+img {
     width: 500px;
     max-width: 90%;
-    margin: 10px;
+    margin: 20px auto;
+    display: block;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     transition: transform 0.3s ease;
 }
-.back-btn {
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  background: #2c3e50;
-  color: white;
-  padding: 10px 16px;
-  border-radius: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  transition: background 0.3s ease;
-}
-img:hover, video:hover {
+
+img:hover {
     transform: scale(1.03);
 }
 
@@ -58,7 +64,7 @@ img:hover, video:hover {
         font-size: 2em;
     }
 
-    p {
-        font-size: 1em;
+    img {
+        width: 90%;
     }
 }
