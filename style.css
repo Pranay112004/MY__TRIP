@@ -1,142 +1,188 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 20px;
-    color: #fff;
-    background: linear-gradient(270deg, #89f7fe, #66a6ff, #a18cd1, #fbc2eb);
-    background-size: 800% 800%;
-    animation: scenicFlow 10s ease infinite;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #0b0b2b, #1b2735 70%, #090a0f);
+  overflow: hidden;
+  position: relative;
+  font-family: 'Arial', sans-serif;
+  color: white;
 }
 
-/* Scenic sky-like flowing gradient */
-@keyframes scenicFlow {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+/* Sky container */
+.sky {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -2;
 }
 
+/* Individual stars */
+.star {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  background: white;
+  opacity: 0.8;
+  animation: twinkle 6s infinite;
+}
+
+/* Twinkle animation */
+@keyframes twinkle {
+  0%, 100% { opacity: 0.8; }
+  50% { opacity: 0.3; }
+}
+
+/* Shooting stars */
+.shooting-star {
+  position: fixed;
+  width: 100px;
+  height: 2px;
+  background: linear-gradient(90deg, white, transparent);
+  transform: rotate(25deg);
+  opacity: 0;
+  z-index: -1;
+  animation: shoot 6s infinite ease-in;
+}
+
+/* Shooting animation */
+@keyframes shoot {
+  0% {
+    transform: translateX(0) translateY(0) rotate(25deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(120vw) translateY(50vh) rotate(25deg);
+    opacity: 0;
+  }
+}
 
 /* Header Styling */
 header {
-    text-align: center;
-    padding-bottom: 20px;
-    border-bottom: 2px solid #ddd;
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #ddd;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-    color: #2c3e50;
+  font-size: 4rem;
+  margin-bottom: 10px;
+  color: #ecf0f1;
+  text-decoration: underline;
+  text-shadow: 1px 1px 3px #000;
+  letter-spacing: 2px;
+  font-style: italic;
 }
 
 header p {
-    font-size: 1rem;
-    margin: 5px 0;
+  font-size: 1rem;
+  margin: 5px 0;
 }
 
 /* Main Section */
 main h2 {
-    text-align: center;
-    margin-top: 40px;
-    color: #34495e;
+  text-align: center;
+  margin-top: 40px;
+  color: #ecf0f1;
 }
 
 /* Trip Container */
 .trip-container {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 30px;
 }
 
 /* Trip Box */
 .trip-box {
-    background-color: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: 300px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: center;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  color: black;
 }
 
 .trip-box:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
 
 .trip-box h3 {
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 12px;
-    color: #2c3e50;
-    font-size: 1.2rem;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 12px;
+  color: #2c3e50;
+  font-size: 1.2rem;
 }
 
 /* Trip Image */
 .trip-box img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-bottom: 1px solid #ddd;
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 1px solid #ddd;
 }
 
 /* Link Styling */
 .trip-box a {
-    display: block;
-    padding: 12px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #2980b9;
-    background-color: #fdfdfd;
+  display: block;
+  padding: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #2980b9;
+  background-color: #fdfdfd;
 }
 
 .trip-box a:hover {
-    background-color: #ecf0f1;
-    color: #1a5276;
+  background-color: #ecf0f1;
+  color: #1a5276;
 }
 
 /* Destination Themes */
 .manali {
-    border-top: 6px solid #3498db;
-    font-style: italic;
+  border-top: 6px solid #3498db;
 }
 
 .delhi {
-    border-top: 6px solid #e67e22;
-    font-style: italic;
+  border-top: 6px solid #e67e22;
 }
 
 .mcleod {
-    border-top: 6px solid #d63384;
-    font-style: italic;
+  border-top: 6px solid #d63384;
 }
 
 /* Footer Styling */
 footer {
-    text-align: center;
-    margin-top: 50px;
-    padding-top: 20px;
-    font-size: 0.9rem;
-    color: #555;
-    border-top: 2px solid #ddd;
+  text-align: center;
+  margin-top: 50px;
+  padding-top: 20px;
+  font-size: 0.9rem;
+  color: #bbb;
+  border-top: 2px solid #ddd;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .trip-container {
-        flex-direction: column;
-        align-items: center;
-    }
+  .trip-container {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .trip-box {
-        width: 90%;
-    }
+  .trip-box {
+    width: 90%;
+  }
 }
